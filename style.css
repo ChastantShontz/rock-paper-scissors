@@ -1,0 +1,6 @@
+.layout {
+  height: 1em;
+  border-radius: .5em;
+  border: .1em solid var(--black);
+  margin: 2.5%;
+}
