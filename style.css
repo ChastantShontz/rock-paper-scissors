@@ -2,7 +2,7 @@
   padding: 1em;
   border-radius: .5em;
   border: .1em solid var(--black);
-  margin: 2.5%;
+  margin: 2em;
 }
 
 .bothChoices {
@@ -18,11 +18,10 @@
 
 .playChoice {
   flex-grow: 2;
+  margin-right: 1em;
 }
 
 .compChoice {
   flex-grow: 1;
-}
-
-.choiceCont {
+  margin-left: 1em;
 }
