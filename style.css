@@ -4,3 +4,15 @@
   border: .1em solid var(--black);
   margin: 2.5%;
 }
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.playChoice, .compChoice {
+  display: inline-block;
+  width: 45%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
