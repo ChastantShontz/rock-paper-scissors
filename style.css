@@ -1,5 +1,5 @@
 .layout {
-  height: 1em;
+  padding: 1em;
   border-radius: .5em;
   border: .1em solid var(--black);
   margin: 2.5%;
@@ -12,7 +12,14 @@
 
 .playChoice, .compChoice {
   display: inline-block;
-  width: 45%;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.playChoice {
+  flex-grow: 2;
+}
+
+.compChoice {
+  flex-grow: 1;
 }
