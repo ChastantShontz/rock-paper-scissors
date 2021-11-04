@@ -5,7 +5,7 @@
   margin: 2.5%;
 }
 
-.choices {
+.bothChoices {
   display: flex;
   justify-content: space-between;
 }
@@ -22,4 +22,7 @@
 
 .compChoice {
   flex-grow: 1;
+}
+
+.choiceCont {
 }
