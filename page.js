@@ -7,14 +7,18 @@ const winCount = document.getElementById("winCount");
 const loseCount = document.getElementById("loseCount");
 const tieCount = document.getElementById("tieCount");
 
-function choose(rock) {
-  var choice = rock;
+function playChoose(rock) {
+  var playChoice = rock;
 }
 
-function choose(paper) {
-  var choice = paper;
+function playChoose(paper) {
+  var playChoice = paper;
 }
 
-function choose(scissors) {
-  var choice = scissors;
+function playChoose(scissors) {
+  var playChoice = scissors;
+}
+
+function compChoose() {
+  var compChoice = Math.ceiling(Math.random() * 3);
 }
