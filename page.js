@@ -18,3 +18,17 @@ function playChoose(paper) {
 function playChoose(scissors) {
   var playChoice = "scissors";
 }
+
+function compChoose() {
+  var number = Math.ceiling(Math.random() * 3);
+  var compChoice;
+  if (number == 1) {
+    compChoice = "rock";
+  }
+  else if (number == 2) {
+    compChoice = "paper";
+  }
+  else if (number == 3) {
+    compChoice = "scissors";
+  }
+}
