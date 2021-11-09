@@ -38,3 +38,27 @@ function compChoose() {
     compChoice = "scissors";
   }
 }
+
+function game() {
+  if ((playChoice == "rock") && (compChoice == "paper")) {
+    var result = "loose";
+  }
+  else if ((playChoice == "rock") && (compChoice == scissors)) {
+    var result = "win";
+  }
+  else if ((playChoice == "paper") && (compChoice == "rock")) {
+    var result = "win";
+  }
+  else if ((playChoice == "paper") && (compChoice == "scissors")) {
+    var result = "loose";
+  }
+  else if ((playChoice == "scissors") && (compChoice == "rock")) {
+    var result = "loose";
+  }
+  else if ((playChoice == "scissors") && (compChoice == "paper")) {
+    var result = "win";
+  }
+  else if (playChoice == compChoice) {
+    var result = "tie";
+  }
+}
