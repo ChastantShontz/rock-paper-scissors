@@ -23,9 +23,9 @@
           <div class="layout playChoice">
             <p class="playChoiceTitle">Your Choice:</p>
             <div class="choiceCont">
-              <img src="img/rock.svg" alt="Rock" class="choice" id="rock">
-              <img src="img/paper.svg" alt="Paper" class="choice" id="paper">
-              <img src="img/scissors.svg" alt="Scissors" class="choice" id="scissors">
+              <img src="img/rock.svg" alt="Rock" class="choice" id="rock" onclick="choose(rock)">
+              <img src="img/paper.svg" alt="Paper" class="choice" id="paper" onclick="choose(paper)">
+              <img src="img/scissors.svg" alt="Scissors" class="choice" id="scissors" onclick="choose(scissors)">
             </div>
           </div>
           <div class="layout compChoice">
@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="layout results">
-          <p class="resultsTitle">Score:</p>
+          <p id="resultsTitle">Score:</p>
           <div class="scoreCont">
             <div class="wins">
               <p class="winText">Wins:</p>
