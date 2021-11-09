@@ -7,6 +7,15 @@ const winCount = document.getElementById("winCount");
 const loseCount = document.getElementById("loseCount");
 const tieCount = document.getElementById("tieCount");
 
+localStorage.setItem("wins", winCount.innerHTML);
+var winNumber = localStorage.getItem("wins");
+
+localStorage.setItem("loses", loseCount.innerHTML);
+var loseNumber = localStorage.getItem("loses");
+
+localStorage.setItem("ties", tieCount.innerHTML);
+var tieNumber = localStorage.getItem("ties");
+
 function playChoose(rock) {
   var playChoice = "rock";
 }
@@ -21,6 +30,7 @@ function playChoose(scissors) {
 
 function compChoose() {
   var number = Math.ceiling(Math.random() * 3);
+  var compChoice;
   if (number == 1) {
     compChoice = "rock";
   }
