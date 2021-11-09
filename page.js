@@ -7,6 +7,12 @@ const winCount = document.getElementById("winCount");
 const loseCount = document.getElementById("loseCount");
 const tieCount = document.getElementById("tieCount");
 
+winCount.innerHTML = 0;
+
+loseCount.innerHTML = 0;
+
+tieCount.innerHTML = 0;
+
 function playChoose(rock) {
   var playChoice = "rock";
 }
@@ -24,11 +30,11 @@ function compChoose() {
   var compChoice;
   if (number == 1) {
     compChoice = "rock";
-  };
+  }
   else if (number == 2) {
     compChoice = "paper";
-  };
+  }
   else if (number == 3) {
     compChoice = "scissors";
-  };
+  }
 }
