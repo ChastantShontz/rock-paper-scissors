@@ -6,3 +6,15 @@ const resultsTitle = document.getElementById("resultsTitle");
 const winCount = document.getElementById("winCount");
 const loseCount = document.getElementById("loseCount");
 const tieCount = document.getElementById("tieCount");
+
+function playChoose(rock) {
+  var playChoice = "rock";
+}
+
+function playChoose(paper) {
+  var playChoice = "paper";
+}
+
+function playChoose(scissors) {
+  var playChoice = "scissors";
+}
