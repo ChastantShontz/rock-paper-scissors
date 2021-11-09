@@ -7,14 +7,14 @@ const winCount = document.getElementById("winCount");
 const loseCount = document.getElementById("loseCount");
 const tieCount = document.getElementById("tieCount");
 
-localStorage.setItem("wins", winCount.innerHTML);
-var winNumber = localStorage.getItem("wins");
+localStorage.wins = winCount.innerHTML;
+var winNumber = localStorage.wins;
 
-localStorage.setItem("loses", loseCount.innerHTML);
-var loseNumber = localStorage.getItem("loses");
+localStorage.loses = loseCount.innerHTML;
+var loseNumber = localStorage.loses;
 
-localStorage.setItem("ties", tieCount.innerHTML);
-var tieNumber = localStorage.getItem("ties");
+localStorage.ties = tieCount.innerHTML;
+var tieNumber = localStorage.ties;
 
 function playChoose(rock) {
   var playChoice = "rock";
@@ -63,5 +63,23 @@ function game() {
   }
   else if (playChoice == compChoice) {
     var result = "tie";
+  }
+}
+
+function result() {
+  if (result == "win") {
+    winNumber++;
+    localStorage.wins = winNumber;
+    winCount.innerHTML = localStorage.wins;
+  }
+  else if (result == "loose") {
+    loseNumber++;
+    localStorage.loses = loseNumber;
+    loseCount.innerHTML = localStorage.loses;
+  }
+  else if (result == "tie") {
+    tieNumber++;
+    localStorage.ties = tieNumber;
+    tieCount.innerHTML = localStorage.ties;
   }
 }
