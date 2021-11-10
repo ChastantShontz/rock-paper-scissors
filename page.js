@@ -1,8 +1,4 @@
-const rock = document.getElementById("rock");
-const paper = document.getElementById("paper");
-const scissors = document.getElementById("scissors");
 const questionMark = document.getElementById("questionMark");
-const resultsTitle = document.getElementById("resultsTitle");
 const winCount = document.getElementById("winCount");
 const loseCount = document.getElementById("loseCount");
 const tieCount = document.getElementById("tieCount");
@@ -12,24 +8,27 @@ loseCount.innerHTML = localStorage.loses;
 tieCount.innerHTML = localStorage.ties;
 
 function game(x) {
-  if (x == rock) {
+  if (x == "rock") {
     var playChoice = "rock";
   }
-  else if (x == paper) {
+  else if (x == "paper") {
     var playChoice = "paper";
   }
-  else if (x == scissors) {
+  else if (x == "scissors") {
     var playChoice = "scissors";
   };
   var num = Math.ceil(Math.random() * 3);
   if (num == 1) {
     var compChoice = "rock";
+    questionMark.src="img/rock.svg";
   }
   else if (num == 2) {
     var compChoice = "paper";
+    questionMark.src="img/paper.svg";
   }
   else if (num == 3) {
     var compChoice = "scissors";
+    questionMark.src="img/scissors.svg";
   };
   if ((playChoice == "rock") && (compChoice == "paper")) {
     var result = "loose";
