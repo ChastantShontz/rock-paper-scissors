@@ -7,9 +7,9 @@ const winCount = document.getElementById("winCount");
 const loseCount = document.getElementById("loseCount");
 const tieCount = document.getElementById("tieCount");
 
-winCount.innerHTML = 0;
-loseCount.innerHTML = 0;
-tieCount.innerHTML = 0;
+winCount.innerHTML = localStorage.wins;
+loseCount.innerHTML = localStorage.loses;
+tieCount.innerHTML = localStorage.ties;
 
 function game(x) {
   if (x == rock) {
@@ -21,20 +21,20 @@ function game(x) {
   else if (x == scissors) {
     var playChoice = "scissors";
   };
-  var number = Math.ceil(Math.random() * 3);
-  if (number == 1) {
+  var num = Math.ceil(Math.random() * 3);
+  if (num == 1) {
     var compChoice = "rock";
   }
-  else if (number == 2) {
+  else if (num == 2) {
     var compChoice = "paper";
   }
-  else if (number == 3) {
+  else if (num == 3) {
     var compChoice = "scissors";
   };
   if ((playChoice == "rock") && (compChoice == "paper")) {
     var result = "loose";
   }
-  else if ((playChoice == "rock") && (compChoice == scissors)) {
+  else if ((playChoice == "rock") && (compChoice == "scissors")) {
     var result = "win";
   }
   else if ((playChoice == "paper") && (compChoice == "rock")) {
@@ -54,11 +54,14 @@ function game(x) {
   };
   if (result == "win") {
     winCount.innerHTML++;
+    localStorage.wins = winCount.innerHTML;
   }
   else if (result == "loose") {
     loseCount.innerHTML++;
+    localStorage.loses = loseCount.innerHTML;
   }
   else if (result == "tie") {
     tieCount.innerHTML++;
+    localStorage.ties = tieCount.innerHTML;
   };
 }
