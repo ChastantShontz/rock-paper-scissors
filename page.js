@@ -8,10 +8,13 @@ const loseCount = document.getElementById("loseCount");
 const tieCount = document.getElementById("tieCount");
 
 winCount.innerHTML = 0;
+var winNum = winCount.innerHTML;
 
 loseCount.innerHTML = 0;
+var loseNum = loseCount.innerHTML;
 
 tieCount.innerHTML = 0;
+var tieNum = tieCount.innerHTML;
 
 function playChoose(rock) {
   var playChoice = "rock";
@@ -60,5 +63,20 @@ function game() {
   }
   else if (playChoice == compChoice) {
     var result = "tie";
+  }
+}
+
+function score() {
+  if (result == "win") {
+    winNum++;
+    winCount.innerHTML = winNum;
+  }
+  else if (result == "loose") {
+    loseNum++;
+    loseCount.innerHTML = loseNum;
+  }
+  else if (result == "tie") {
+    tieNum++;
+    tieCount.innerHTML = tieNum;
   }
 }
