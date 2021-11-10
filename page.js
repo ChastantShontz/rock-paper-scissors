@@ -65,3 +65,14 @@ function game(x) {
     localStorage.ties = tieCount.innerHTML;
   };
 }
+
+function reset() {
+  localStorage.wins = 0;
+  winCount.innerHTML = 0;
+
+  localStorage.loses = 0;
+  loseCount.innerHTML = 0;
+
+  localStorage.ties = 0;
+  tieCount.innerHTML = 0;
+}
