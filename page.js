@@ -118,5 +118,5 @@ function reset() {
   loseCount.innerHTML = 0;
   localStorage.ties = 0;
   tieCount.innerHTML = 0;
-  resultsMsg.innerHTML = "Best of luck! &#129310; &#129310;";
+  resultsMsg.innerHTML = "Best of luck!";
 }
