@@ -1,4 +1,4 @@
-const questionMark = document.getElementById("questionMark");
+const questMark = document.getElementById("questMark");
 const resultsMsg = document.getElementById("resultsMsg");
 const winCount = document.getElementById("winCount");
 const loseCount = document.getElementById("loseCount");
@@ -21,15 +21,15 @@ function game(x) {
   var num = Math.ceil(Math.random() * 3);
   if (num == 1) {
     var compChoice = "rock";
-    questionMark.src="img/rock.svg";
+    questMark.src = "img/rock.svg";
   }
   else if (num == 2) {
     var compChoice = "paper";
-    questionMark.src="img/paper.svg";
+    questMark.src = "img/paper.svg";
   }
   else if (num == 3) {
     var compChoice = "scissors";
-    questionMark.src="img/scissors.svg";
+    questMark.src = "img/scissors.svg";
   };
   if ((playChoice == "rock") && (compChoice == "paper")) {
     var result = "loose";
