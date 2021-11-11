@@ -153,8 +153,11 @@ body {
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  transform: none !important;
   cursor: auto;
+}
+
+#questMark:hover {
+  transform: none !important;
 }
 
 .results {
@@ -214,8 +217,18 @@ body {
   margin-bottom: 1em;
   font-family: "Roboto", sans-serif;
   color: var(--fireBackground);
+  font-size: 1.1em;
   font-weight: bold;
   cursor: pointer;
+}
+
+.reset:hover {
+  background: linear-gradient(to top right, rgba(252, 223, 33, 25%), rgba(250, 150, 0, 25%), rgba(250, 47, 47, 25%));
+}
+
+.reset:active {
+  transform: scale(.9);
+  background: linear-gradient(to top right, rgba(252, 223, 33, 50%), rgba(250, 150, 0, 50%), rgba(250, 47, 47, 50%));
 }
 
 /* JavaScript Added Classes */
