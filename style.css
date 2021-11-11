@@ -1,3 +1,10 @@
+/*
+Irish Grover
+Russo One
+Luckiest Guy
+Press Start 2P
+*/
+
 /* Body Classes */
 
 .layout {
@@ -8,6 +15,7 @@
 }
 
 .instructIntro {
+  font-family: "Acme", sans-serif;
   text-align: center;
 }
 
