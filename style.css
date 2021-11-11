@@ -43,6 +43,12 @@
   font-size: 1.25em;
 }
 
+.instructDirect {
+  margin-left: 2%;
+  margin-right: 40%;
+  font-size: 1.1em;
+}
+
 .bothChoices {
   display: flex;
   justify-content: space-between;
