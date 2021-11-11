@@ -1,3 +1,6 @@
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
 const questMark = document.getElementById("questMark");
 const resultsMsg = document.getElementById("resultsMsg");
 const winCount = document.getElementById("winCount");
@@ -11,25 +14,43 @@ tieCount.innerHTML = localStorage.ties;
 function game(x) {
   if (x == "rock") {
     var playChoice = "rock";
+    rock.style.transform = "scale(1.25)";
+    paper.style.transform = "scale(1)";
+    scissors.style.transform = "scale(1)";
   }
   else if (x == "paper") {
     var playChoice = "paper";
+    paper.style.transform = "scale(1.25)";
+    rock.style.transform = "scale(1)";
+    scissors.style.transform = "scale(1)";
   }
   else if (x == "scissors") {
     var playChoice = "scissors";
+    scissors.style.transform = "scale(1.25)";
+    rock.style.transform = "scale(1)";
+    paper.style.transform = "scale(1)";
   };
   var num = Math.ceil(Math.random() * 3);
   if (num == 1) {
     var compChoice = "rock";
     questMark.src = "img/rock.svg";
+    questMark.classList.remove("scale");
+    void questMark.offsetWidth;
+    questMark.classList.add("scale");
   }
   else if (num == 2) {
     var compChoice = "paper";
     questMark.src = "img/paper.svg";
+    questMark.classList.remove("scale");
+    void questMark.offsetWidth;
+    questMark.classList.add("scale");
   }
   else if (num == 3) {
     var compChoice = "scissors";
     questMark.src = "img/scissors.svg";
+    questMark.classList.remove("scale");
+    void questMark.offsetWidth;
+    questMark.classList.add("scale");
   };
   if ((playChoice == "rock") && (compChoice == "paper")) {
     var result = "loose";

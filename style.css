@@ -79,10 +79,12 @@
 
 .choice {
   cursor: pointer;
+  transition: all .1s ease;
 }
 
 .choice:hover {
-  transform: scale(1.25);
+  transform: scale(1.25) !important;
+  transition: all .5s ease;
 }
 
 .vs {
@@ -110,6 +112,23 @@
   width: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+#questMark:hover {
+  transform: none;
+}
+
+.scale {
+  animation: scale .5s ease forwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50%, 100% {
+    transform: scale(1.25);
+  }
 }
 
 #resultsMsg {
