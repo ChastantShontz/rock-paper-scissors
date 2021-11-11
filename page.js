@@ -54,16 +54,19 @@ function game(x) {
   };
   if (result == "win") {
     resultsMsg.innerHTML = "Congrat, you won this round!";
+    resultsMsg.style.visibility = "visible";
     winCount.innerHTML++;
     localStorage.wins = winCount.innerHTML;
   }
   else if (result == "loose") {
     resultsMsg.innerHTML = "Aww, looks like you lost.  Want to play again?";
+    resultsMsg.style.visibility = "visible";
     loseCount.innerHTML++;
     localStorage.loses = loseCount.innerHTML;
   }
   else if (result == "tie") {
     resultsMsg.innerHTML = "It's a tie!  Play again to break it!";
+    resultsMsg.style.visibility = "visible";
     tieCount.innerHTML++;
     localStorage.ties = tieCount.innerHTML;
   };

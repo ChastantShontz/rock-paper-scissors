@@ -102,6 +102,11 @@
   margin-right: auto;
 }
 
+#resultsMsg {
+  visibility: hidden;
+  text-align: center;
+}
+
 /* Root Colors */
 
 :root {
