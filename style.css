@@ -26,6 +26,7 @@ body {
 
 .instructIntro {
   font-family: "Acme", sans-serif;
+  color: var(--fireBackground);
   text-align: center;
 }
 
@@ -57,7 +58,12 @@ body {
                -.045em -.16em .08em var(--fire5),
                -.045em -.17em .08em var(--fire6),
                -.05em -.18em .09em var(--fire6),
-               -.05em -.19em .09em var(--fire6);
+               -.05em -.19em .09em var(--fire6),
+               0 0 .1em var(--fireBackground),
+               0 0 .2em var(--fireBackground),
+               0 0 .3em var(--fireBackground),
+               0 0 .4em var(--fireBackground),
+               0 0 .5em var(--fireBackground);
 }
 
 .xtremeLetter {
