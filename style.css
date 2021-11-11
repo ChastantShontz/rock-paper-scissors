@@ -75,6 +75,7 @@
 }
 
 .playChoiceLabel, .compChoiceLabel {
+  font-family: "Farro", sans-serif;
   text-align: center;
 }
 
