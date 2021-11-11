@@ -161,8 +161,11 @@ body {
 }
 
 #resultsMsg {
+  background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
+  background-clip: text;
   margin-bottom: 0;
   font-family: "Merriweather", serif;
+  color: transparent;
   text-align: center;
 }
 
