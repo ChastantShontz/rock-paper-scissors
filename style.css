@@ -1,8 +1,42 @@
+/* Body Classes */
+
 .layout {
   padding: 1em;
   border-radius: .5em;
   border: .1em solid var(--black);
   margin: 2em;
+}
+
+.instructIntro {
+  text-align: center;
+}
+
+.xtreme {
+  color: rgba(239, 95, 0, 10%);
+  font-size: 1.5em;
+  text-shadow: 0 0 .02em rgba(250, 250, 250, 100%),
+               0 0 .04em rgba(250, 250, 250, 80%),
+               0 0 .06em rgba(250, 250, 250, 60%),
+               0 0 .08em rgba(250, 250, 250, 40%),
+               0 0 .1em rgba(250, 250, 250, 20%),
+               -.01em -.02em .01em var(--fire1),
+               -.01em -.03em .01em var(--fire1),
+               -.015em -.04em .02em var(--fire1),
+               -.015em -.05em .02em var(--fire2),
+               -.02em -.06em .03em var(--fire2),
+               -.02em -.07em .03em var(--fire2),
+               -.025em -.08em .04em var(--fire3),
+               -.025em -.09em .04em var(--fire3),
+               -.03em -.1em .05em var(--fire3),
+               -.03em -.11em .05em var(--fire4),
+               -.035em -.12em .06em var(--fire4),
+               -.035em -.13em .06em var(--fire4),
+               -.04em -.14em .07em var(--fire5),
+               -.04em -.15em .07em var(--fire5),
+               -.045em -.16em .08em var(--fire5),
+               -.045em -.17em .08em var(--fire6),
+               -.05em -.18em .09em var(--fire6),
+               -.05em -.19em .09em var(--fire6);
 }
 
 .bothChoices {
@@ -24,4 +58,16 @@
 .compChoice {
   flex-grow: 1;
   margin-left: 1em;
+}
+
+/* Root Colors */
+
+:root {
+  --fire1: #edb600;
+  --fire2: #f26f00;
+  --fire3: #ef5f00;
+  --fire4: #cc3202;
+  --fire5: #ad2003;
+  --fire6: #7a1000;
+  --fireBackground: #ef5f00;
 }

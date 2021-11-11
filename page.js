@@ -1,5 +1,5 @@
 const questionMark = document.getElementById("questionMark");
-const resultsTitle = document.getElementById("resultsTitle");
+const resultsMsg = document.getElementById("resultsMsg");
 const winCount = document.getElementById("winCount");
 const loseCount = document.getElementById("loseCount");
 const tieCount = document.getElementById("tieCount");
@@ -53,17 +53,17 @@ function game(x) {
     var result = "tie";
   };
   if (result == "win") {
-    resultsTitle.innerHTML = "Congrat, you won this round!";
+    resultsMsg.innerHTML = "Congrat, you won this round!";
     winCount.innerHTML++;
     localStorage.wins = winCount.innerHTML;
   }
   else if (result == "loose") {
-    resultsTitle.innerHTML = "Aww, looks like you lost.  Want to play again?";
+    resultsMsg.innerHTML = "Aww, looks like you lost.  Want to play again?";
     loseCount.innerHTML++;
     localStorage.loses = loseCount.innerHTML;
   }
   else if (result == "tie") {
-    resultsTitle.innerHTML = "It's a tie!  Play again to break it!";
+    resultsMsg.innerHTML = "It's a tie!  Play again to break it!";
     tieCount.innerHTML++;
     localStorage.ties = tieCount.innerHTML;
   };
