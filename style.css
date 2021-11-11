@@ -69,6 +69,11 @@
   text-align: center;
 }
 
+.choiceCont {
+  display: flex;
+  justify-content: space-around;
+}
+
 .compChoice {
   flex-grow: 1;
   margin-left: 1em;
