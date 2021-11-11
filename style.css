@@ -112,8 +112,14 @@ body {
   flex-direction: column;
   justify-content: center;
   font-family: "Anton", sans-serif;
+  color: var(--fireBackground);
   font-size: 2em;
   font-weight: bold;
+  text-shadow: 0 0 .1em var(--white),
+               0 0 .2em var(--white),
+               0 0 .3em var(--white),
+               0 0 .4em var(--white),
+               0 0 .5em var(--white);
 }
 
 .compChoice {
@@ -133,10 +139,7 @@ body {
   width: auto;
   margin-left: auto;
   margin-right: auto;
-}
-
-#questMark:hover {
-  transform: none;
+  cursor: pointer;
 }
 
 .results {
