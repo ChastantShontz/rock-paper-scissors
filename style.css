@@ -39,6 +39,10 @@
                -.05em -.19em .09em var(--fire6);
 }
 
+.xtremeLetter {
+  font-size: 1.25em;
+}
+
 .bothChoices {
   display: flex;
   justify-content: space-between;
