@@ -130,6 +130,22 @@
   font-size: 2em;
 }
 
+.reset {
+  display: block;
+  border-radius: 5em;
+  background-color: var(--white);
+  width: auto;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  border: .1em solid var(--black);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
 /* Root Colors */
 
 :root {
