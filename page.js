@@ -3,8 +3,11 @@ const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const questMark = document.getElementById("questMark");
 const resultsMsg = document.getElementById("resultsMsg");
+const winLabel = document.getElementById("winLabel");
 const winCount = document.getElementById("winCount");
+const loseLabel = document.getElementById("loseLabel");
 const loseCount = document.getElementById("loseCount");
+const tieLabel = document.getElementById("tieLabel");
 const tieCount = document.getElementById("tieCount");
 
 winCount.innerHTML = localStorage.wins;
@@ -74,22 +77,37 @@ function game(x) {
     var result = "tie";
   };
   if (result == "win") {
-    resultsMsg.innerHTML = "Congrat, you won this round!";
-    resultsMsg.style.visibility = "visible";
+    resultsMsg.innerHTML = "Congrats, you won this round!";
     winCount.innerHTML++;
     localStorage.wins = winCount.innerHTML;
+    winLabel.style.fontWeight = "bold";
+    loseLabel.style.fontWeight = "normal";
+    tieLabel.style.fontWeight = "normal";
+    winCount.style.fontWeight = "bold";
+    loseCount.style.fontWeight = "normal";
+    tieCount.style.fontWeight = "normal";
   }
   else if (result == "loose") {
-    resultsMsg.innerHTML = "Aww, looks like you lost.  Want to play again?";
-    resultsMsg.style.visibility = "visible";
+    resultsMsg.innerHTML = "Aww, looks like you lost.  Better luck next time!";
     loseCount.innerHTML++;
     localStorage.loses = loseCount.innerHTML;
+    loseLabel.style.fontWeight = "bold";
+    winLabel.style.fontWeight = "normal";
+    tieLabel.style.fontWeight = "normal";
+    loseCount.style.fontWeight = "bold";
+    winCount.style.fontWeight = "normal";
+    tieCount.style.fontWeight = "normal";
   }
   else if (result == "tie") {
     resultsMsg.innerHTML = "It's a tie!  Play again to break it!";
-    resultsMsg.style.visibility = "visible";
     tieCount.innerHTML++;
     localStorage.ties = tieCount.innerHTML;
+    tieLabel.style.fontWeight = "bold";
+    winLabel.style.fontWeight = "normal";
+    loseLabel.style.fontWeight = "normal";
+    tieCount.style.fontWeight = "bold";
+    winCount.style.fontWeight = "normal";
+    loseCount.style.fontWeight = "normal";
   };
 }
 
@@ -100,6 +118,5 @@ function reset() {
   loseCount.innerHTML = 0;
   localStorage.ties = 0;
   tieCount.innerHTML = 0;
-  resultsMsg.style.visibility = "hidden";
-  resultsMsg.innerHTML = ".";
+  resultsMsg.innerHTML = "Best of luck! &#129310; &#129310;";
 }
