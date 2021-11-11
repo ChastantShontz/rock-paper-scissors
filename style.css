@@ -157,11 +157,13 @@
 
 .scoreLabel {
   margin-bottom: .5em;
+  font-family: "Farro", sans-serif;
   font-size: 1.5em;
 }
 
 .scoreCount {
   margin-top: 0;
+  font-family: "Farro", sans-serif;
   font-size: 2em;
 }
 
