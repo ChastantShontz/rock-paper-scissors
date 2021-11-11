@@ -17,21 +17,30 @@ tieCount.innerHTML = localStorage.ties;
 function game(x) {
   if (x == "rock") {
     var playChoice = "rock";
-    rock.style.transform = "scale(1.25)";
+    rock.style.transform = "scale(1.5)";
     paper.style.transform = "scale(1)";
     scissors.style.transform = "scale(1)";
+    rock.classList.add("press");
+    paper.classList.remove("press");
+    scissors.classList.remove("press");
   }
   else if (x == "paper") {
     var playChoice = "paper";
-    paper.style.transform = "scale(1.25)";
+    paper.style.transform = "scale(1.5)";
     rock.style.transform = "scale(1)";
     scissors.style.transform = "scale(1)";
+    paper.classList.add("press");
+    rock.classList.remove("press");
+    scissors.classList.remove("press");
   }
   else if (x == "scissors") {
     var playChoice = "scissors";
-    scissors.style.transform = "scale(1.25)";
+    scissors.style.transform = "scale(1.5)";
     rock.style.transform = "scale(1)";
     paper.style.transform = "scale(1)";
+    scissors.classList.add("press");
+    rock.classList.remove("press");
+    paper.classList.remove("press");
   };
   var num = Math.ceil(Math.random() * 3);
   if (num == 1) {
@@ -86,6 +95,9 @@ function game(x) {
     winCount.style.fontWeight = "bold";
     loseCount.style.fontWeight = "normal";
     tieCount.style.fontWeight = "normal";
+    winCount.style.transform = "scale(1.25)";
+    loseCount.style.transform = "scale(1)";
+    tieCount.style.transform = "scale(1)";
   }
   else if (result == "loose") {
     resultsMsg.innerHTML = "Aww, looks like you lost.  Better luck next time!";
@@ -97,6 +109,9 @@ function game(x) {
     loseCount.style.fontWeight = "bold";
     winCount.style.fontWeight = "normal";
     tieCount.style.fontWeight = "normal";
+    loseCount.style.transform = "scale(1.25)";
+    winCount.style.transform = "scale(1)";
+    tieCount.style.transform = "scale(1)";
   }
   else if (result == "tie") {
     resultsMsg.innerHTML = "It's a tie!  Play again to break it!";
@@ -108,6 +123,9 @@ function game(x) {
     tieCount.style.fontWeight = "bold";
     winCount.style.fontWeight = "normal";
     loseCount.style.fontWeight = "normal";
+    tieCount.style.transform = "scale(1.25)";
+    winCount.style.transform = "scale(1)";
+    loseCount.style.transform = "scale(1)";
   };
 }
 
