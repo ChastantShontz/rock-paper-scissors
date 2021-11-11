@@ -98,7 +98,10 @@ body {
 }
 
 .playChoiceLabel, .compChoiceLabel {
+  background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
+  background-clip: text;
   font-family: "Farro", sans-serif;
+  color: transparent;
   text-align: center;
 }
 
