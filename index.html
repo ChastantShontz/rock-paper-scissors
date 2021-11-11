@@ -29,11 +29,11 @@
             </div>
           </div>
           <div class="vs">
-            <p><b>V.S.</b></p>
+            <p>V.S.</p>
           </div>
           <div class="layout compChoice">
             <h3 class="compChoiceLabel">Opponent's Choice</h3>
-            <div class="center">
+            <div class="centerQuestMark">
               <img src="img/questionMark.svg" alt="Question mark" class="choice" id="questMark">
             </div>
           </div>
@@ -41,17 +41,17 @@
         <div class="layout results">
           <h3 id="resultsMsg">.</h3>
           <div class="scoreCont">
-            <div class="wins">
-              <p class="winLabel">Wins:</p>
-              <p id="winCount">0</p>
+            <div class="score wins">
+              <p class="scoreLabel winLabel">Wins:</p>
+              <p class="scoreCount" id="winCount">0</p>
             </div>
-            <div class="loses">
-              <p class="loseLabel">Loses:</p>
-              <p id="loseCount">0</p>
+            <div class="score loses">
+              <p class="scoreLabel loseLabel">Loses:</p>
+              <p class="scoreCount" id="loseCount">0</p>
             </div>
-            <div class="ties">
-              <p class="tieLabel">Ties:</p>
-              <p id="tieCount">0</p>
+            <div class="score ties">
+              <p class="scoreLabel tieLabel">Ties:</p>
+              <p class="scoreCount" id="tieCount">0</p>
             </div>
           </div>
           <button type="reset" class="reset" onclick="reset()">Reset</button>
