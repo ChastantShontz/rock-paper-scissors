@@ -1,13 +1,27 @@
-/*
-*/
+/* Original Classes */
 
-/* Body Classes */
+body {
+  background-image: url(img/fireBackground.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.background {
+  background-color: transparent !important;
+  border: none !important;
+}
 
 .layout {
+  background-color: var(--white);
   padding: 1%;
   border-radius: .5em;
-  border: .1em solid var(--black);
-  margin: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.instruct {
+  margin-top: 0;
 }
 
 .instructIntro {
@@ -65,8 +79,6 @@
 .playChoice, .compChoice {
   display: inline-block;
   height: 12em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .playChoice {
@@ -127,17 +139,8 @@
   transform: none;
 }
 
-.scale {
-  animation: scale .5s ease forwards;
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50%, 100% {
-    transform: scale(1.25);
-  }
+.results {
+  margin-bottom: 0;
 }
 
 #resultsMsg {
@@ -185,7 +188,22 @@
   cursor: pointer;
 }
 
-/* Root Colors */
+/* JavaScript Added Classes */
+
+.scale {
+  animation: scale .5s ease forwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50%, 100% {
+    transform: scale(1.25);
+  }
+}
+
+/* Colors Variables */
 
 :root {
   --fire1: #edb600;
