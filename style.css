@@ -76,6 +76,13 @@
   margin-top: 2em;
 }
 
+.vs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2em;
+}
+
 .compChoice {
   flex-grow: 1;
   margin-left: 1em;
