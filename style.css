@@ -77,6 +77,14 @@
   margin-top: 2em;
 }
 
+.choice {
+  cursor: pointer;
+}
+
+.choice:hover {
+  transform: scale(1.25);
+}
+
 .vs {
   display: flex;
   flex-direction: column;
