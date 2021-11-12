@@ -202,8 +202,8 @@ body {
 #resultsMsg {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: .5em;
+  margin-bottom: .5em;
   font-family: "Merriweather", serif;
   color: transparent;
   text-align: center;
@@ -302,4 +302,18 @@ body {
   --fire5: #ad2003;
   --fire6: #7a1000;
   --fireBackground: #ef5f00;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) and (max-width: 989px) {
+  .playChoice, .compChoice {height: auto;}
+  .choiceCont {flex-direction: column; align-items: center; width: 100%;}
+  .choice {margin-top: 1em; margin-bottom: 1em;}
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+}
+
+@media screen and (max-width: 549px) {
 }
