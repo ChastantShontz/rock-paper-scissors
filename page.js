@@ -139,4 +139,10 @@ function reset() {
   resultsMsg.innerHTML = "Best of luck!";
   questMark.src = "img/questionMark.svg";
   questMark.classList.remove("scale");
+  rock.style.transform = "scale(1)";
+  paper.style.transform = "scale(1)";
+  scissors.style.transform = "scale(1)";
+  rock.classList.remove("press");
+  paper.classList.remove("press");
+  scissors.classList.remove("press");
 }
