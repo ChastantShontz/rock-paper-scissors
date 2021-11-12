@@ -137,4 +137,6 @@ function reset() {
   localStorage.ties = 0;
   tieCount.innerHTML = 0;
   resultsMsg.innerHTML = "Best of luck!";
+  questMark.src = "img/questionMark.svg";
+  questMark.classList.remove("scale");
 }
