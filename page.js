@@ -131,11 +131,20 @@ function game(x) {
 
 function reset() {
   localStorage.wins = 0;
-  winCount.innerHTML = 0;
   localStorage.loses = 0;
-  loseCount.innerHTML = 0;
   localStorage.ties = 0;
+  winCount.innerHTML = 0;
+  loseCount.innerHTML = 0;
   tieCount.innerHTML = 0;
+  winLabel.style.fontWeight = "normal";
+  loseLabel.style.fontWeight = "normal";
+  tieLabel.style.fontWeight = "normal";
+  winCount.style.fontWeight = "normal";
+  loseCount.style.fontWeight = "normal";
+  tieCount.style.fontWeight = "normal";
+  winCount.style.transform = "scale(1)";
+  loseCount.style.transform = "scale(1)";
+  tieCount.style.transform = "scale(1)";
   resultsMsg.innerHTML = "Best of luck!";
   questMark.src = "img/questionMark.svg";
   questMark.classList.remove("scale");
