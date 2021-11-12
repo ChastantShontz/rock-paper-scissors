@@ -100,7 +100,7 @@ function game(x) {
     tieCount.style.transform = "scale(1)";
   }
   else if (result == "loose") {
-    resultsMsg.innerHTML = "Looks like you lost.  Better luck next time!";
+    resultsMsg.innerHTML = "Aww, you lost.  Want to try again?";
     loseCount.innerHTML++;
     localStorage.loses = loseCount.innerHTML;
     loseLabel.style.fontWeight = "bold";

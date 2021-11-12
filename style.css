@@ -323,4 +323,11 @@ body {
 }
 
 @media screen and (max-width: 549px) {
+  .bothChoices {display: block;}
+  .playChoice, .compChoice {width: 100%;}
+  .playChoice {height: auto;}
+  .choiceCont {flex-direction: column; align-items: center; width: 100%;}
+  .choice {margin-top: 1em; margin-bottom: 2em;}
+  .vs {margin-top: -1em; margin-bottom: -1em; text-align: center;}
+  .compChoice {margin-left: 0;}
 }
