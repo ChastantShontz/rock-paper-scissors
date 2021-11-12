@@ -27,8 +27,11 @@ body {
 .instructIntro {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
+  margin-top: .5em;
+  margin-bottom: .5em;
   font-family: "Acme", sans-serif;
   color: transparent;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -107,10 +110,11 @@ body {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
   margin-left: 2%;
-  margin-right: 40%;
   margin-top: 0;
+  margin-bottom: 1em;
   font-family: "Merriweather", serif;
   color: transparent;
+  font-size: 1.1em;
 }
 
 .bothChoices {
@@ -131,15 +135,20 @@ body {
 .playChoiceLabel, .compChoiceLabel {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
+  margin-top: .5em;
+  margin-bottom: .5em;
   font-family: "Farro", sans-serif;
   color: transparent;
   text-align: center;
 }
 
+.playChoiceLabel {
+  margin-bottom: 1em;
+}
+
 .choiceCont {
   display: flex;
   justify-content: space-around;
-  margin-top: 2em;
 }
 
 .choice {
@@ -158,7 +167,7 @@ body {
   justify-content: center;
   font-family: "Anton", sans-serif;
   color: var(--fireBackground);
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
   text-shadow: 0 0 .1em var(--white),
                0 0 .2em var(--white),
@@ -184,11 +193,6 @@ body {
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  cursor: auto;
-}
-
-#questMark:hover {
-  transform: none !important;
 }
 
 .results {
@@ -198,7 +202,8 @@ body {
 #resultsMsg {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
-  margin-bottom: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-family: "Merriweather", serif;
   color: transparent;
   text-align: center;
@@ -216,6 +221,7 @@ body {
 .scoreLabel {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
+  margin-top: 0;
   margin-bottom: .5em;
   font-family: "Farro", sans-serif;
   color: transparent;
@@ -227,6 +233,7 @@ body {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
   margin-top: 0;
+  margin-bottom: .5em;
   font-family: "Farro", sans-serif;
   color: transparent;
   font-size: 2em;
@@ -245,7 +252,7 @@ body {
   border: .2em solid var(--fireBackground);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   font-family: "Roboto", sans-serif;
   color: var(--fireBackground);
   font-size: 1.1em;
