@@ -27,6 +27,7 @@ body {
 .instructIntro {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
+  -webkit-background-clip: text;
   margin-top: .5em;
   margin-bottom: .5em;
   font-family: "Acme", sans-serif;
@@ -109,6 +110,7 @@ body {
 .instructDirect {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
+  -webkit-background-clip: text;
   margin-left: 2%;
   margin-top: 0;
   margin-bottom: 1em;
@@ -135,6 +137,7 @@ body {
 .playChoiceLabel, .compChoiceLabel {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
+  -webkit-background-clip: text;
   margin-top: .5em;
   margin-bottom: .5em;
   font-family: "Farro", sans-serif;
@@ -202,6 +205,7 @@ body {
 #resultsMsg {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
+  -webkit-background-clip: text;
   margin-top: .5em;
   margin-bottom: .5em;
   font-family: "Merriweather", serif;
@@ -221,6 +225,7 @@ body {
 .scoreLabel {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
+  -webkit-background-clip: text;
   margin-top: 0;
   margin-bottom: .5em;
   font-family: "Farro", sans-serif;
@@ -232,6 +237,7 @@ body {
 .scoreCount {
   background: linear-gradient(to top right, var(--yellow), var(--orange), var(--red));
   background-clip: text;
+  -webkit-background-clip: text;
   margin-top: 0;
   margin-bottom: .5em;
   font-family: "Farro", sans-serif;
