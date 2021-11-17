@@ -14,6 +14,18 @@ winCount.innerHTML = localStorage.wins;
 loseCount.innerHTML = localStorage.loses;
 tieCount.innerHTML = localStorage.ties;
 
+function load() {
+  if (localStorage.wins == undefined) {
+    winCount.innerHTML = 0;
+  }
+  if (localStorage.loses == undefined) {
+    loseCount.innerHTML = 0;
+  }
+  if (localStorage.ties == undefined) {
+    tieCount.innerHTML = 0;
+  }
+}
+
 function game(x) {
   if (x == "rock") {
     var playChoice = "rock";
