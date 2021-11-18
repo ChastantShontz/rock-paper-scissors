@@ -77,7 +77,7 @@ function game(x) {
     questMark.classList.add("scale");
   };
   if ((playChoice == "rock") && (compChoice == "paper")) {
-    var result = "loose";
+    var result = "lose";
   }
   else if ((playChoice == "rock") && (compChoice == "scissors")) {
     var result = "win";
@@ -86,10 +86,10 @@ function game(x) {
     var result = "win";
   }
   else if ((playChoice == "paper") && (compChoice == "scissors")) {
-    var result = "loose";
+    var result = "lose";
   }
   else if ((playChoice == "scissors") && (compChoice == "rock")) {
-    var result = "loose";
+    var result = "lose";
   }
   else if ((playChoice == "scissors") && (compChoice == "paper")) {
     var result = "win";
@@ -111,7 +111,7 @@ function game(x) {
     loseCount.style.transform = "scale(1)";
     tieCount.style.transform = "scale(1)";
   }
-  else if (result == "loose") {
+  else if (result == "lose") {
     resultsMsg.innerHTML = "Aww, you lost.  Want to try again?";
     loseCount.innerHTML++;
     localStorage.loses = loseCount.innerHTML;
